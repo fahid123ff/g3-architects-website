@@ -125,6 +125,75 @@ main{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+/* sponsers */
+.sponsers{
+  text-align: center;
+}
+.sponsors-img-container{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: center;
+}
+.sponsors-img-container img{
+  width: 165px;
+}
+/* Feature section style */
+.feature{
+  margin-top: 130px;
+  display: flex;
+  gap: 100px;
+}
+.feature-content .card{
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature .section-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+.feature-img img{
+  height: 90%;
+  margin-left: 90px;
+}
+.ten-year-beach{
+  border-radius: 8px;
+  background: #FF900E;
+  color: #FFF;
+  width: 340px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+}
+.ten-year-beach h2{
+  font-size: 4rem;
+  margin: 0;
+}
+.ten-year-beach p{
+  font-size: 1.5rem;
+}
+/* footer section */
+.footer-title{
+  border-radius: 8px;
+  background: #FFF4E7;
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 140px;
+  margin-bottom: 240px;
+}
+.footer-description{
+  text-align: center;
+  font-size: 1.25rem;
+  color: #424242;
+ padding-top: 40px;
+
+}
 
 
 
@@ -141,7 +210,10 @@ main{
       padding: 20px;
     }
     nav,
-    .teams-container
+    .teams-container,
+    .facts-card-container,
+    .sponsors-img-container,
+    .feature
     {
       flex-direction: column;
     }
@@ -149,9 +221,22 @@ main{
       grid-template-columns: 1fr;
      
     }
-    .teams-contant{
+    .teams-contant,
+    .facts-card-container
+    {
       padding-right: 20px;
       padding-left: 20px;
+    }
+    .facts-card-container{
+      gap: 20px;
+    }
+    .feature-img img{
+      width: 99%;
+      margin: 0;
+    }
+    .ten-year-beach{
+      position: static;
+      max-width: 300px;
     }
   }
   /* tabet or medium device */
@@ -159,7 +244,10 @@ main{
   header{
     padding: 20px;
   }
-  nav, .teams-container{
+  nav,
+  .feature,
+  .teams-container,
+  .sponsors-img-container{
   flex-direction: column;
   }
 }
